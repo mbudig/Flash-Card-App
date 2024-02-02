@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Flash Cards</h1>
+    <div id="card-controller">
+
+    </div>
+    <div id="button-layout">
+        <button onclick="displayCard(currentIndex)">Display Card</button>
+        <button onclick="previousCard()">Previous</button>
+        <button onclick="flipCard()">Flip Card</button>
+        <button onclick="nextCard()">Next</button>
+        <button onclick="showForm()">Create Card</button>
+        <button onclick="deleteCard()">Delete Card</button>
+    </div>
+    <div id="add-card">
+        <h2>Add a new card</h2>
+        <form id="new-card-form" action="http://localhost:8080/flash_cards" method="post">
+            <label for="front">Front of card</label>
+            <input type="text" name="front" id="front" required>
+            <br>
+
+            <label for="back">Back of card</label>
+            <input type="text" name="back" id="back" required>
+            <br>
+
+            <button type="submit">Add new card</button>
+        </form>
+        <div id="validation"></div>
+    </div>
+    <script src="./flash_cards.js"></script>
+</body>
+</html>

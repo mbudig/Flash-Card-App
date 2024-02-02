@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+label, input {
+    margin: 5px;
+}
+
+#card-controller {
+    margin: auto;
+    border: black solid 2px;
+    width: 700px;
+    height: 400px;
+}
+
+#button-layout {
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+#card-text {
+    text-align: center;
+    font-size: 36px;
+}
+
+#add-card {
+    visibility: hidden;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
